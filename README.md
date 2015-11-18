@@ -14,4 +14,23 @@ First you will need to download WiringPI library from Gordon :
 
 Once it is done, download the servo library from this git. Then it is as simple as this : 
 
-https://github.com/omaflak/Raspberry-PI-Servo/blob/master/libServoSample.cpp
+    #include <wiringPi.h> // don't forget
+    #include <cstdlib>
+    #include "libServo.h"
+
+    using namespace std;
+
+    int pin=24;
+
+    int main()
+    {
+
+        if (wiringPiSetup() == -1)
+            exit(1);
+
+        Servo servo(pin);    // set a pin.
+        servo.init(90);      // initialize the servo to an angle. Need to be called only once.
+
+        servo.move(180);     // Then move the servo to any angle.
+        servo.move(0);
+    }
