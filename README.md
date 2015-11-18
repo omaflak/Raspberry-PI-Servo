@@ -24,7 +24,6 @@ Once it is done, download the servo library from this git. Then it is as simple 
 
     int main()
     {
-
         if (wiringPiSetup() == -1)
             exit(1);
 
