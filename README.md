@@ -4,7 +4,7 @@ The simplest way to use servo motors on a Raspberry PI
 HOW TO
 ======
 
-First you will need to download WiringPI library from Gordon :
+First you will need to download WiringPI library from [Gordon](https://projects.drogon.net/raspberry-pi/wiringpi/download-and-install/) :
 
     git clone git://git.drogon.net/wiringPi
     cd wiringPi
